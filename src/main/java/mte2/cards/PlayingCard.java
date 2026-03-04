@@ -25,7 +25,7 @@ public class PlayingCard implements Comparable<PlayingCard> {
     public int compareTo(PlayingCard o) { return this.suit.compareTo(suit); }
     
     public int compareTo(PlayingCard a, PlayingCard b){
-        double diff = a.getRank() - b.getRank();
+        double diff = a.rank.getRankNumber() - b.rank.getRankNumber();;
         if(diff <0) {return -1;}
         else if (diff >0) {return 1;}
         else {return 0;}
