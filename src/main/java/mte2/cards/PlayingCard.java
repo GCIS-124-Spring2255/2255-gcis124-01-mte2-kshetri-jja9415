@@ -12,7 +12,7 @@ public class PlayingCard implements Comparable<PlayingCard> {
     /**
      * Creates a new playing card with the specified suit and rank.
      * @param suit The suit of the new card.
-     * @param rank The rank of the new card.     
+     * @param rank The rank of the new card.
      */
     public PlayingCard(Suit suit, Rank rank) { this.suit = suit;  this.rank = rank;  }
     
@@ -25,7 +25,7 @@ public class PlayingCard implements Comparable<PlayingCard> {
     public int compareTo(PlayingCard o) { return this.suit.compareTo(suit); }
     
     public int compareTo(PlayingCard a, PlayingCard b){
-        doubled diff = a.getRank() - b.getRank();
+        double diff = a.getRank() - b.getRank();
         if(diff <0) {return -1;}
         else if (diff >0) {return 1;}
         else {return 0;}
