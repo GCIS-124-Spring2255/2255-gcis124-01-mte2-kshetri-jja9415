@@ -5,6 +5,6 @@
 package mte2.shapes;
 
 public interface Shape {
-    double perimeter();
-    double area();
+    public double perimeter();
+    public double area();
 }

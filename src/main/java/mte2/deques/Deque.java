@@ -11,6 +11,6 @@ public interface Deque<E> extends Iterable<E> {
     public void enqueueBack(E element);
     public E dequeueFront();
     public E dequeueBack();
-    public int size();    
+    public int size();
 
 }
